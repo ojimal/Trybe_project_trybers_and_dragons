@@ -5,7 +5,6 @@ export default class PVP extends Battle {
   private _hero: Fighter;
   private _opponent: Fighter;
 
-
   constructor(hero: Fighter, opponent: Fighter) {
     super(hero);
     this._hero = hero;
@@ -21,8 +20,7 @@ export default class PVP extends Battle {
   
     if (this._hero.lifePoints <= 0) {
       return -1; // Hero lost
-    } else {
-      return 1; // Hero won
-    }
+    } 
+    return 1; // Hero won
   }
 }
